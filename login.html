@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <style>
+      #header{
+        height: 10vh;
+        z-index: 5;
+        padding: 50px;
+      }
+      #header ul li a{
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .name :hover {
+        color: black;
+      }
+      .name{
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      footer ul li {
+          font-size: 1.5rem;
+        }
+        .footer1{
+          font-size: 1.5rem;
+        }
+        .grid-container1 h2{
+          font-weight: 700;
+        }
+        .grid-container1 h1{
+          font-weight: 700;
+        }
+      @media (max-width:800px) {
+        .grid-container1{
+          column-gap: 1vw;
+        }
+        footer .grid-item-three{
+          margin-left:-50px;
+        }
+        footer ul li {
+          font-size: 1.3rem;
+        }
+        .footer1{
+          font-size: 1.5rem;
+        }
+        .grid-container1 h2{
+          font-weight: 700;
+        }
+        .grid-container1 h1{
+          font-weight: 700;
+        }
+        .wrp button{
+          font-size: 1rem;
+        }
+        form .zero{
+          font-size: 1.4rem;
+          padding: 5vw;
+        }
+        .mobile{
+         margin-right: -140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+  
+      <section id="header">
+        <h1 class="name"><a href="index.html">Sanrakshan</a></h1>
+        <ul id="nav">
+          <a href="#" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
+          <li><a class="active" href="howitworks.html">How It Works</a></li>
+          <li><a class="active" href="login.html">Log In</a></li>
+          <!-- <li><a href="fundraisers.html">Fundraisers</a></li> -->
+          <li><a class="active" href="register.html">Create Campaign</a></li>
+          <li><a class="active" href="faq.html">FAQs</a></li>
+          <li>
+            <form action=""><div class="search_box">
+            <input type="text" id="search-input" placeholder="Search fundraisers...">
+            <button id="search-button">Search</button>
+            </div>
+            </form>
+          </li>
+        </ul>
+        <div class="mobile">
+          <i id="menu" class="fa-solid fa-bars"></i>
+        </div>
+      </section>
+    </header>
+
+
+
+    <div class="wrp">
+    <form id="MainForm">
+        <h2>User Log In</h2>
+        <br>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="emailInp" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="passwordInp" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <br>
+      <a href="#" class="zero">Forgot Password</a>
+      <br>
+      <a href="index.html"><button type="button" class="btn btn-primary" style="float: right">Log In</button></a>
+      <a href="register.html"> <button type="button" class="btn btn-primary">Sign Up</button></a>
+    </form>  
+  </div>
+
+  
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="grid-container1"> 
+  
+        <div class="grid-item-three">
+          <ul>
+        <li><h1>Sanrakshan</h1></li>
+        <li>Description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quae aliquam aliquid quod odio non sit, sed deserunt eum quis.</li>
+      </ul>
+      </div>
+
+
+        <div class="grid-item-one">
+          <ul>
+        <li><h2>About Us</h2></li>
+        <li>Sanrakshan</li>
+        <li>Blog</li>
+        <li>Privacy Policy</li>
+        <li>Terms&Conditions</li><br>
+      </ul>
+        
+      </div>
+
+        <div class="grid-item-two">
+          <ul>
+        <li><h2>Contact Us</h2></li>
+        <li>Instagram <i class="fa-brands fa-instagram"></i></li>
+        <li>Conact No. <i class="fa-solid fa-phone"></i></li>
+        <li>Telegram <i class="fa-solid fa-paper-plane"></i></li>
+        <li>Facebook <i class="fa-brands fa-facebook"></i></li>
+        <li>Youtube <i class="fa-brands fa-youtube"></i></li>
+      </ul>
+      </div> 
+     
+      </div>      
+  
+
+    </footer>
+    <footer class="footer1">
+    
+      <!-- <div class="footer-item">About Us  </div>
+      <div class="footer-item">Privacy</div>
+      <div class="footer-item">Terms & Conditions</div>
+      <div class="footer-item"> Contact Us    </div>
+      <div class="footer-item"> <a href=start-fundraising.html>Start Fundraising</a>  </div>
+      <div class="footer-item"><i class="fa-brands fa-instagram"></i></div>
+      <div class="footer-item"><i class="fa-solid fa-phone"></i></div>
+      <div class="footer-item"><i class="fa-solid fa-paper-plane"></i></div>
+      <div class="footer-item"><i class="fa-brands fa-facebook"></i></div>
+      <div class="footer-item"> <a href="faq.html">FAQs</a>    </div> -->
+      <div class="footer-item">&copy; 2023 Sanrakshan</div>
+                                  
+    </footer>
+    <script src="script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous"></script>
+    <script type="module">
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getDatabase, get, ref, child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+      
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyBroJGyrWVIYNxvTBBFMng4W61YJachf10",
+          authDomain: "woc1-3b0fa.firebaseapp.com",
+          databaseURL: "https://woc1-3b0fa-default-rtdb.firebaseio.com",
+          projectId: "woc1-3b0fa",
+          storageBucket: "woc1-3b0fa.appspot.com",
+          messagingSenderId: "1011884424537",
+          appId: "1:1011884424537:web:d569149dac33da6d352048"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+        const auth = getAuth(app);
+        const dbref = ref(db);
+
+        let EmailInp = document.getElementById('emailInp');
+        let PassInp = document.getElementById('passwordInp');
+        let MainForm = document.getElementById('MainForm');
+
+        let SignInUser = evt => {
+            evt.preventDefault();
+
+            signInWithEmailAndPassword(auth,EmailInp.value, PassInp.value).then((credentials) => {
+                get(child(dbref, 'UserAuthList/' + credentials.user.uid)).then((snapshot)=> {
+                    if(snapshot.exists){
+                        sessionStorage.setItem("user-info", JSON.stringify({
+                            fisrtname: snapshot.val().fisrtname,
+                            lastname: snapshot.val().lastname,
+                        }))
+                        sessionStorage.setItem("user-creds", JSON.stringify(credentials.user));
+                        window.location.href = 'index.html';
+                    }
+                })
+            })
+            .catch((error)=> {
+                alert(error.message);
+                console.log(error.code);
+                console.log(error.message);
+            })
+        }
+
+        MainForm.addEventListener('submit', SignInUser);
+      </script>
+  </body>
+</html>
